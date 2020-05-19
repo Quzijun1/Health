@@ -2,6 +2,7 @@ package com.wd.health
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.wd.health.utils.SpUtil
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,5 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //
         //
+       var  keyname=SpUtil.DelegatesExt.spUtil("keyname","")
+
     }
 }

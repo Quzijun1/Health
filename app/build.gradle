@@ -42,5 +42,7 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.4.0")//日志拦截器的依赖
     implementation 'com.squareup.picasso:picasso:2.71828'
     //anko
-    implementation "org.jetbrains.anko:anko:0.10.8"
+    implementation "org.jetbrains.anko:anko:0.10.1"
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
 }

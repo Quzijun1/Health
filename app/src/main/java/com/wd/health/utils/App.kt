@@ -11,7 +11,11 @@ import android.content.Context
  * @classname :全局App类
  */
   class App : Application() {
-    lateinit var context:Context
+    companion object{
+      private  var context:Context?=null
+        fun instance()= context!!
+
+    }
     override fun onCreate() {
         super.onCreate()
         context=this;

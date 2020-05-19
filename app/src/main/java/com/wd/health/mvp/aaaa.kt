@@ -1,5 +1,8 @@
 package com.wd.health.mvp
 
+import android.preference.Preference
+import com.wd.health.utils.SpUtil
+
 /**
  * @author 袁晨冉
  * Class :1708A
@@ -7,3 +10,8 @@ package com.wd.health.mvp
  * @date :2020/5/18 20:54
  * @classname :
  */
+class  aaaa{
+
+
+
+}
