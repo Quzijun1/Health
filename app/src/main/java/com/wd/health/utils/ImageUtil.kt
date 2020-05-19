@@ -26,7 +26,7 @@ class ImageUtil private constructor(){
         private set
     }
     fun getPhone(path:String,imageView:ImageView){
-      Glide.with(App.context!!)
+      Glide.with(App.instance())
           .load(path)
           .apply(RequestOptions.bitmapTransform(RoundedCorners(25)))
           .error(R.mipmap.id_card)
