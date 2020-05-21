@@ -11,6 +11,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/commonmodule" />
+            <option value="$PROJECT_DIR$/consultationmodule" />
+            <option value="$PROJECT_DIR$/homepagemodule" />
+            <option value="$PROJECT_DIR$/mymodule" />
+            <option value="$PROJECT_DIR$/sickfriendmodule" />
+            <option value="$PROJECT_DIR$/walletmodule" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

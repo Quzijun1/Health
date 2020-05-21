@@ -1,2 +1,8 @@
 rootProject.name='Health'
 include ':app'
+include ':mymodule'
+include ':consultationmodule'
+include ':homepagemodule'
+include ':walletmodule'
+include ':sickfriendmodule'
+include ':commonmodule'
