@@ -1,4 +1,4 @@
-package com.wd.phone.base
+package com.wd.health.base
 
 import android.os.Bundle
 import android.os.PersistableBundle

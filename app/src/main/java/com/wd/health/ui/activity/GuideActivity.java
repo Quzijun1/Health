@@ -117,6 +117,10 @@ public class GuideActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.guide5:
+                startActivity(new Intent(this, SplashKotlinActivity.class));
+                finish();
+                break;
             case R.id.btn_back:
                 startActivity(new Intent(this, SplashKotlinActivity.class));
                 finish();
