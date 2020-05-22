@@ -1,7 +1,7 @@
 package com.wd.health.ui.activity
-
 import com.wd.health.R
 import com.wd.health.base.BaseActivity
+import kotlinx.android.synthetic.main.activity_loglin.*
 
 
 /**ClassName: Health
@@ -10,7 +10,11 @@ import com.wd.health.base.BaseActivity
  * @Description: 用途：完成特定功能
  */
 class LoginActivity : BaseActivity() {
+
+
     override fun initData() {
+        val name = logactivity_name.text.toString()
+        val pwd = logactivity_pwd.text.toString()
 
     }
 

@@ -34,12 +34,13 @@
                     android:layout_width="@dimen/dp_40"
                     android:layout_height="@dimen/dp_40"
                     android:src="@mipmap/log3"
-                    android:id="@+id/logactivity_name"
+
                     android:layout_marginLeft="@dimen/dp_20"/>
             <EditText
                 android:layout_width="@dimen/dp_180"
+                android:id="@+id/logactivity_name"
                 android:layout_height="wrap_content"
-                android:text="请输入邮箱"
+                android:hint="请输入邮箱"
                 android:layout_marginRight="@dimen/dp_20"/>
             </LinearLayout>
             <LinearLayout
@@ -55,7 +56,7 @@
                 <EditText
                     android:layout_width="@dimen/dp_180"
                     android:layout_height="wrap_content"
-                    android:text="请输入密码"
+                    android:hint="请输入密码"
                     android:id="@+id/logactivity_pwd"
                     />
                 <ImageView

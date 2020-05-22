@@ -33,6 +33,7 @@ public class GuideActivity extends AppCompatActivity implements View.OnClickList
     private ImageView point1, point2, point3, point4,point5;
     //跳过
     private Button btn_back;
+    private Button ms;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,8 +62,14 @@ public class GuideActivity extends AppCompatActivity implements View.OnClickList
         view3 = View.inflate(this, R.layout.pager_item_three, null);
         view4 = View.inflate(this, R.layout.pager_item_four, null);
         view5 = View.inflate(this, R.layout.pager_item_five, null);
-
-
+        ms = view5.findViewById(R.id.ms);
+        ms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(GuideActivity.this, LoginActivity.class));
+                finish();
+            }
+        });
         mList.add(view1);
         mList.add(view2);
         mList.add(view3);
@@ -117,12 +124,8 @@ public class GuideActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.guide5:
-                startActivity(new Intent(this, SplashKotlinActivity.class));
-                finish();
-                break;
             case R.id.btn_back:
-                startActivity(new Intent(this, SplashKotlinActivity.class));
+                startActivity(new Intent(this, LoginActivity.class));
                 finish();
                 break;
         }

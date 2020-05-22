@@ -5,8 +5,9 @@ import android.view.View
 import androidx.core.view.ViewCompat
 import androidx.core.view.ViewPropertyAnimatorListener
 import com.wd.health.R
+import com.wd.health.base.BaseActivity
 import com.wd.health.ui.activity.GuideActivity
-import com.wd.phone.base.BaseActivity
+
 import kotlinx.android.synthetic.main.activity_splash.*
 
 
