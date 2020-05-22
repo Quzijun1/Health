@@ -15,7 +15,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    
+
 
     buildTypes {
         release {
@@ -46,6 +46,7 @@ dependencies {
     implementation "org.jetbrains.anko:anko:0.10.1"
     // glide
     implementation 'com.github.bumptech.glide:glide:4.9.0'
-    //Xbanner
+    //  tablayout
+    implementation 'com.android.support:design:27.1.1'
 
 }
