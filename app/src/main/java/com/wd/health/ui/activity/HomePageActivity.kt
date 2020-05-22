@@ -22,6 +22,7 @@ class HomePageActivity : BaseActivity() {
         myList.add(searchFragmet)
         var homePageAdapter=HomePageAdapter(myList,supportFragmentManager)
         home_page_vp.adapter=homePageAdapter
+        home_page_vp.setCurrentItem(1)
         home_page_tab.setupWithViewPager(home_page_vp)
 
     }
