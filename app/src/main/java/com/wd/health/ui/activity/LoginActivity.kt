@@ -1,7 +1,11 @@
 package com.wd.health.ui.activity
+
+import android.util.Log
 import com.wd.health.R
 import com.wd.health.base.BaseActivity
+import com.wd.health.utils.RsaCoder
 import kotlinx.android.synthetic.main.activity_loglin.*
+import java.lang.Exception
 
 
 /**ClassName: Health
@@ -15,7 +19,12 @@ class LoginActivity : BaseActivity() {
     override fun initData() {
         val name = logactivity_name.text.toString()
         val pwd = logactivity_pwd.text.toString()
-
+        try {
+            val s = RsaCoder.encryptByPublicKey("qzj123456")
+            Log.d("11ss",""+s)
+        }catch (e:Exception){
+            e.printStackTrace()
+        }
     }
 
     override fun initListener() {
