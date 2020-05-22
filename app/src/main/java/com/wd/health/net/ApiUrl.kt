@@ -6,5 +6,7 @@ package com.wd.health.net
  * @Description: 用途：完成特定功能
  */
 object ApiUrl {
-     const val BASE_URL=""
+     const val BASE_URL="http://mobile.bwstudent.com/"
+     const val LOG_URL="http://mobile.bwstudent.com/"
+     const val REG_URL="http://mobile.bwstudent.com/"
 }
