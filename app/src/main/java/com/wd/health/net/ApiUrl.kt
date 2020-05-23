@@ -7,6 +7,6 @@ package com.wd.health.net
  */
 object ApiUrl {
      const val BASE_URL="http://mobile.bwstudent.com/"
-     const val LOG_URL="http://mobile.bwstudent.com/"
+     const val LOG_URL="health/user/v1/login"
      const val REG_URL="http://mobile.bwstudent.com/"
 }

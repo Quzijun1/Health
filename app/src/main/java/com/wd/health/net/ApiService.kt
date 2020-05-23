@@ -12,7 +12,8 @@ import retrofit2.http.POST
  * @Description: 用途：完成特定功能
  */
 interface ApiService {
+    //登录接口
     @POST(ApiUrl.LOG_URL)
     @FormUrlEncoded
-    open  fun getSendemaildata(@Field("email") email: String?): Observable<LogBean>?
+    fun onLog(@Field("email") email: String?,@Field("pwd") pwd: String?): Observable<LogBean>?
 }

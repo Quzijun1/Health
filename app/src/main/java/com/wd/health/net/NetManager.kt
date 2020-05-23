@@ -1,4 +1,4 @@
-package com.wd.doctor.net
+package com.wd.health.net
 
 import android.util.Log
 import android.widget.ImageView
