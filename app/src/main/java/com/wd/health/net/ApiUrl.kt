@@ -7,6 +7,10 @@ package com.wd.health.net
  */
 object ApiUrl {
      const val BASE_URL="http://mobile.bwstudent.com/"
+     //登录
      const val LOG_URL="health/user/v1/login"
-     const val REG_URL="http://mobile.bwstudent.com/"
+     //注册
+     const val REG_URL="health/user/v1/register"
+     //获取验证码
+     const val SENDOUTEMAILCODE_URL="health/user/v1/sendOutEmailCode"
 }

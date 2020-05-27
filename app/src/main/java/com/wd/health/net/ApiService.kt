@@ -16,4 +16,12 @@ interface ApiService {
     @POST(ApiUrl.LOG_URL)
     @FormUrlEncoded
     fun onLog(@Field("email") email: String?,@Field("pwd") pwd: String?): Observable<LogBean>?
+    //注册接口
+    @POST(ApiUrl.REG_URL)
+    @FormUrlEncoded
+    fun onReg(@Field("email") email: String?,@Field("code") code: String?,@Field("pwd1") pwd1: String?,@Field("pwd2") pwd2: String?,@Field("invitationCode") invitationCode: String?): Observable<LogBean>?
+    //发送验证码接口
+    @POST(ApiUrl.SENDOUTEMAILCODE_URL)
+    @FormUrlEncoded
+    fun onSend(@Field("email") email: String?): Observable<LogBean>?
 }

@@ -2,6 +2,7 @@ package com.wd.health.net
 
 import android.text.TextUtils
 import com.wd.health.net.ApiService
+import com.wd.health.utils.SpUtil
 import okhttp3.Interceptor
 import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -33,8 +34,11 @@ class RetrofitUtil {
                 override fun intercept(chain: Interceptor.Chain): Response {
                     val request = chain.request()
                     val newBuilder = request.newBuilder()
-                    newBuilder.addHeader("Accept", "application/json")
-                    newBuilder.addHeader("Content-Type", "application/json")
+                    val spUtil = SpUtil.getSpUtil()
+                    val int1 = spUtil.getInt("id")
+                    val string = spUtil.getString("sessionId")
+                    newBuilder.addHeader("userId", int1.toString())
+                    newBuilder.addHeader("sessionId", string.toString())
                     val newRequest = newBuilder.build()
                     return chain.proceed(newRequest)
                 }

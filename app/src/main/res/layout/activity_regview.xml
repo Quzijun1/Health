@@ -58,14 +58,14 @@
                 <ImageView
                     android:layout_width="@dimen/dp_30"
                     android:layout_height="@dimen/dp_30"
-                    android:src="@mipmap/log3"
+                    android:src="@mipmap/register_icon_verification_code_n"
 
                     android:layout_marginLeft="@dimen/dp_20"/>
                 <EditText
                     android:layout_width="@dimen/dp_156"
                     android:id="@+id/regactivity_yzm"
                     android:layout_height="wrap_content"
-                    android:hint="请输入邮箱"
+                    android:hint="请输入验证码"
                     />
             </LinearLayout>
             <LinearLayout
@@ -122,7 +122,7 @@
                 <ImageView
                     android:layout_width="@dimen/dp_30"
                     android:layout_height="@dimen/dp_30"
-                    android:src="@mipmap/log3"
+                    android:src="@mipmap/register_icon_invitatiion_code_n"
 
                     android:layout_marginLeft="@dimen/dp_20"/>
                 <EditText

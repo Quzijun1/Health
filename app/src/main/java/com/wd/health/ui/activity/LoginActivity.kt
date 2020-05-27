@@ -1,14 +1,13 @@
 package com.wd.health.ui.activity
 
+import android.content.Intent
 import android.util.Log
-import android.widget.Toast
 import com.wd.health.R
 import com.wd.health.base.BaseActivity
 import com.wd.health.bean.LogBean
-import com.wd.health.net.ApiService
 import com.wd.health.net.RetrofitUtil
-import com.wd.health.utils.App
 import com.wd.health.utils.RsaCoder
+import com.wd.health.utils.SpUtil
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.observers.DisposableObserver
 import io.reactivex.schedulers.Schedulers
@@ -50,9 +49,21 @@ class LoginActivity : BaseActivity(),AnkoLogger {
 
                             override fun onNext(t: LogBean) {
                                 val message = t.message
+                                val result = t.result
+                                val id = result.id
+                                val sessionId = result.sessionId
+                                val spUtil = SpUtil.getSpUtil()
+                                spUtil.putInt("id",id)
+                                spUtil.putString("sessionId",sessionId)
                                 Log.d("XXX",message)
                                 if (message.equals("登录成功")){
                                     toast("登录成功")
+                                    startActivity(
+                                        Intent(
+                                            this@LoginActivity, HomePageActivity::class.java
+                                        )
+                                    )
+                                    finish()
                                 }else{
                                     toast("登录失败")
                                 }
@@ -94,6 +105,15 @@ class LoginActivity : BaseActivity(),AnkoLogger {
             }catch (e:Exception){
                 e.printStackTrace()
             }
+        }
+        logactivity_wj.setOnClickListener {  }
+        logactivity_reg.setOnClickListener {
+            startActivity(
+                Intent(
+                    this@LoginActivity, RegActivty::class.java
+                )
+            )
+            finish()
         }
     }
 

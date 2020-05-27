@@ -6,12 +6,14 @@ import androidx.fragment.app.Fragment
 import com.wd.health.R
 import com.wd.health.adapter.HomePageAdapter
 import com.wd.health.base.BaseActivity
+
 import com.wd.health.ui.fragment.FnformationFragment
 import com.wd.health.ui.fragment.KnowledgeFragment
 import com.wd.health.ui.fragment.SearchFragmet
 import kotlinx.android.synthetic.main.activity_home_page.*
 
 class HomePageActivity : BaseActivity() {
+
     override fun initData() {
         var myList=ArrayList<Fragment>()
         var fnformationFragment=FnformationFragment()
